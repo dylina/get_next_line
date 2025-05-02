@@ -6,7 +6,7 @@
 /*   By: dgorceac <dgorceac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 13:22:25 by dgorceac          #+#    #+#             */
-/*   Updated: 2025/04/28 21:02:40 by dgorceac         ###   ########.fr       */
+/*   Updated: 2025/05/02 12:17:03 by dgorceac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@
 #endif
 
 char	*get_next_line(int fd);
+int		ft_contains(const char *s, int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strdup(const char *source);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+int		ft_strlen(const char *str);
 
 #endif
