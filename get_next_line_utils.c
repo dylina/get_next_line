@@ -6,7 +6,7 @@
 /*   By: dgorceac <dgorceac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 13:21:49 by dgorceac          #+#    #+#             */
-/*   Updated: 2025/04/28 20:43:27 by dgorceac         ###   ########.fr       */
+/*   Updated: 2025/05/02 12:15:48 by dgorceac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,20 @@ char	*ft_strchr(const char *s, int c)
 	if (c == '\0')
 		return ((char *) &s[i]);
 	return (NULL);
+}
+int	ft_contains(const char *s, int c)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return (1);
+		i++;
+	}
+	if (c == '\0')
+		return (0);
 }
 char	*ft_strjoin(char const *s1, char const *s2)
 {
