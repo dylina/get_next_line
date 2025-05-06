@@ -6,12 +6,11 @@
 /*   By: dgorceac <dgorceac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 13:20:30 by dgorceac          #+#    #+#             */
-/*   Updated: 2025/05/06 14:42:32 by dgorceac         ###   ########.fr       */
+/*   Updated: 2025/05/06 15:32:44 by dgorceac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 
 char	*sub_line(char *rest)
 {
@@ -66,6 +65,7 @@ char	*find_line(char *rest)
 	line[i] = '\0';
 	return (line);
 }
+
 char	*gnl_newfile(int fd, char *save)
 {
 	char	*buffer;
@@ -104,4 +104,3 @@ char	*get_next_line(int fd)
 	save = sub_line(save);
 	return (line);
 }
-
